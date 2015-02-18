@@ -68,7 +68,7 @@ public class TEIFormater {
         if (withStyleSheet) {
             tei.append("<?xml-stylesheet type=\"text/xsl\" href=\"../jsp/xmlverbatimwrapper.xsl\"?> \n");
         }
-        tei.append("<TEI xmlns=\"http://www.tei-c.org/ns/1.0\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" " +
+        tei.append("<TEI xmlns:tei=\"http://www.tei-c.org/ns/1.0\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" " +
                 "\n xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n");
         if (doc.getLanguage() != null) {
             tei.append("\t<teiHeader xml:lang=\"" + doc.getLanguage() + "\">");
